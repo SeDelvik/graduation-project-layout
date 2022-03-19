@@ -1,0 +1,277 @@
+body{
+    margin: 0%;
+    background-color: goldenrod;
+    font-family: 'Open Sans',Sans-serif;
+    color: #383838;
+}
+header{
+    height: 100px;
+}
+.top_but{
+    color: white;
+    margin: 15px;
+    font-weight: 700;
+}
+.logo_text{
+    font-weight: bold;
+    padding: 7%;
+    color: white;
+    font-size: 30px;
+    background: transparent url(../src/images/logo.png) no-repeat left/15%;
+}
+.margin{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+.top_bar{
+    height: 40px;
+    width: auto;
+    background: #392f1e;
+    color: #8b857b;
+    /* text-align: right; */
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.background{
+    display: flex;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 25px;
+    
+}
+.top_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.first{
+    padding: 10px 15px;
+    background-color: rgba(20, 18, 14, 0.719);
+}
+.second{
+    padding: 5px 15px;
+    background-color: wheat;
+}
+
+.button{
+    font-size: 15px;
+    border-radius: 20px;
+    /* background-color: #fdb201; */
+    padding: 9px 20px;
+    margin: 2px 5px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 700;
+    color: white;
+    /* width: 20%; */
+}
+.active_b{
+    background-color: #fdb201;
+    color: #56400c;
+}
+.active_b:hover{
+    background-color: #805900;
+}
+.b_second{
+    color: #56400c;
+}
+a{
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+}
+.search_menu{
+    /* padding: ; */
+    border: 2px solid #857456;
+    /* border-radius: 18px; */
+}
+#submit_button{
+    width: 16px;
+    text-indent: -9999px;
+    float: right;
+    border: 0;
+    background: transparent url(../src/images/icon_search.png) no-repeat 0 50%;
+}
+#search_field{
+    border: 0;
+    background-color: transparent;
+    color: #aaa59d;
+    outline: none;
+}
+.random_post{
+    background-color: #291a02;
+    color: #fdb201;
+}
+
+.content{
+    width: 60%;
+    /* float: left; */
+    /* margin: 25px; */
+}
+
+.card{
+    /* margin: 15px; */
+}
+.user_info{
+    display: flex;
+    align-items: center;
+}
+.user_name{
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.user_pic{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.tag_block{
+    margin: 5px 0;
+}
+.tag{
+    margin-right: 15px;
+    text-decoration: underline;
+    color: #6c6c6c;
+    font-weight: bold;
+    font-size: 12px;
+}
+.post_text{
+    margin: 5px 0px ;
+}
+.post_pic{
+    width: 100%;
+}
+.post_info{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.publish_date{
+    /* float:right; */
+    margin-right: auto;
+    font-size: 10px;
+    color: #383838;
+}
+.rating_info{
+    display: flex;
+    align-items: center;
+}
+.rating{
+    float:right;
+    font-size: 32px;
+}
+.plus{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: green solid 3px;
+    background-color: lightgreen;
+    color: green;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 10px;
+    line-height: 25px;
+}
+.minus{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: red solid 3px;
+    background-color: lightcoral;
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 10px;
+    line-height: 20px;
+}
+.few_things{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.right_bar{
+    width: 40%;
+    /* margin-top: 25px;
+    margin-right: 25px; */
+    margin-left: 50px;
+}
+.segment_nav{
+    margin-bottom: 50px;
+}
+.text{
+    margin-bottom: 30px;
+}
+.title{
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid black;
+}
+.new_post{
+    background-color: #f0f0f0;
+    padding: 18px 40px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+.tag_big{
+    /* background-color: aqua; */
+    padding: 0 5%;
+    line-height: 50px;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    display: block;
+    /* background-color: #fdb201; */
+    text-align: right;
+    padding: 5px 20px;
+    border: white solid 2px;
+    position: relative;
+    height: 40px;
+    opacity: 0.9;
+}
+.one{
+    background: transparent url(../src/images/котэ-животные-реактора-обнимашки-7272973.jpeg) no-repeat center/100%;
+}
+.two{
+    background: transparent url(../src/images/eldercactus-Комиксы-перевел-сам-7272966.jpeg) no-repeat top/100%;
+}
+.tree{
+    background: transparent url(../src/images/hr-it-юмор-geek-презентация-7225978.jpeg) no-repeat center/100%;
+}
+
+.footer{
+    border-top: #6c6c6c solid 2px;
+    background-color: #fff;
+    overflow: hidden;
+    font-weight: bold;
+    color: #6c6c6c;
+    margin-bottom: 30px;
+}
+.text_footer{
+    margin: 20px 50%;
+}
