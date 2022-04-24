@@ -1,0 +1,257 @@
+body{
+    margin: 0;
+    background-color: #daa520;
+    font-family: 'Open Sans',Sans-serif;
+    color: #383838;
+}
+.logo_pic{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+.logo_text{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 30px;
+}
+.margin{
+    width: 90%;
+    margin: auto;
+}
+.top_bar{
+    padding: 0 5% 0 5%;
+    width: auto;
+    background: #392f1e;
+    color: #8b857b;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.top_button{
+    color: #ffffff;
+    margin: 15px;
+    font-weight: 700;
+}
+.background{
+    display: flex;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 25px;
+}
+.header{
+    display: grid;
+    grid-template-rows: 40px 150px;    
+    align-items: center;
+}
+.nav_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #14120eb7;
+}
+.post_filter{
+    padding: 5px 15px;
+    background-color: #f5deb3;
+    
+}
+
+.post_filter .button{
+    color: #56400c;
+}
+
+.button{
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 9px 20px;
+    margin: 2px 5px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 700;
+    color: #ffffff;
+}
+.active_b{
+    background-color: #fdb201;
+    color: #56400c;
+}
+.active_b:hover{
+    background-color: #805900;
+}
+.inactive_b{
+    color: #56400c;
+}
+.link{
+    text-decoration: none;
+}
+
+.search_menu{
+    border: 2px solid #857456;
+}
+#submit_button{
+    width: 16px;
+    float: right;
+    border: 0;
+    background: transparent url(../src/images/icon_search.png) no-repeat 0 50%;
+}
+#search_field{
+    border: 0;
+    background-color: transparent;
+    color: #aaa59d;
+    outline: none;
+}
+.random_post{
+    background-color: #291a02;
+    color: #fdb201;
+}
+
+.content{
+    width: 60%;
+}
+.user_info{
+    display: flex;
+    align-items: center;
+}
+.user_name{
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.user_pic{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.tag_block{
+    margin: 5px 0;
+}
+.tag{
+    margin-right: 15px;
+    text-decoration: underline;
+    color: #6c6c6c;
+    font-weight: bold;
+    font-size: 12px;
+}
+.post_text{
+    margin: 5px 0px ;
+}
+.post_pic{
+    width: 100%;
+}
+.post_info{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.publish_date{
+    margin-right: auto;
+    font-size: 10px;
+    color: #383838;
+}
+.rating_info{
+    display: flex;
+    align-items: center;
+}
+.rating{
+    float:right;
+    font-size: 32px;
+}
+.plus{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: #008000 solid 3px;
+    background-color: #90ee90;
+    color: #008000;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 10px;
+    line-height: 25px;
+}
+.minus{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: #ff0000 solid 3px;
+    background-color: #f08080;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 10px;
+    line-height: 20px;
+}
+.right_bar{
+    width: 40%;
+    margin-left: 50px;
+}
+.segment_nav{
+    margin-bottom: 50px;
+}
+.text{
+    margin-bottom: 30px;
+}
+.title{
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #000000;
+}
+.new_post{
+    background-color: #f0f0f0;
+    padding: 18px 40px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+.tag_big{
+    padding: 0 5%;
+    line-height: 50px;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    position: absolute;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+.list{
+    padding: 0;
+    margin: 0;
+}
+.item_list{
+    display: block;
+    text-align: right;
+    border: #ffffff solid 2px;
+    position: relative;
+    height: 40px;
+    opacity: 0.9;
+}
+
+.item_list .img_tag_background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+
+.footer{
+    border-top: #6c6c6c solid 2px;
+    background-color: #ffffff;
+    overflow: hidden;
+    font-weight: bold;
+    color: #6c6c6c;
+    margin-bottom: 30px;
+}
+.text_footer{
+    margin: 20px 50%;
+}
