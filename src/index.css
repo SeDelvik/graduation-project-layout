@@ -1,72 +1,77 @@
 body{
-    margin: 0%;
-    background-color: goldenrod;
+    margin: 0;
+    background-color: #daa520;
     font-family: 'Open Sans',Sans-serif;
     color: #383838;
 }
-header{
-    height: 100px;
-}
-.top_but{
-    color: white;
-    margin: 15px;
-    font-weight: 700;
+.logo_pic{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
 }
 .logo_text{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
     font-weight: bold;
-    padding: 7%;
-    color: white;
+    color: #ffffff;
     font-size: 30px;
-    background: transparent url(../src/images/logo.png) no-repeat left/15%;
 }
 .margin{
     width: 90%;
     margin: auto;
-    overflow: hidden;
 }
 .top_bar{
-    height: 40px;
+    padding: 0 5% 0 5%;
     width: auto;
     background: #392f1e;
     color: #8b857b;
-    /* text-align: right; */
     display: flex;
     justify-content:flex-end;
     align-items: center;
 }
+.top_button{
+    color: #ffffff;
+    margin: 15px;
+    font-weight: 700;
+}
 .background{
     display: flex;
-    background-color: #fff;
+    background-color: #ffffff;
     overflow: hidden;
     padding: 25px;
-    
 }
-.top_nav{
+.header{
+    display: grid;
+    grid-template-rows: 40px 150px;    
+    align-items: center;
+}
+.nav_container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
-}
-.first{
     padding: 10px 15px;
-    background-color: rgba(20, 18, 14, 0.719);
+    background-color: #14120eb7;
 }
-.second{
+.post_filter{
     padding: 5px 15px;
-    background-color: wheat;
+    background-color: #f5deb3;
+    
+}
+
+.post_filter .button{
+    color: #56400c;
 }
 
 .button{
     font-size: 15px;
     border-radius: 20px;
-    /* background-color: #fdb201; */
     padding: 9px 20px;
     margin: 2px 5px;
     text-transform: uppercase;
     display: inline-block;
     font-weight: 700;
-    color: white;
-    /* width: 20%; */
+    color: #ffffff;
 }
 .active_b{
     background-color: #fdb201;
@@ -75,24 +80,18 @@ header{
 .active_b:hover{
     background-color: #805900;
 }
-.b_second{
+.inactive_b{
     color: #56400c;
 }
-a{
+.link{
     text-decoration: none;
 }
 
-form{
-    display: flex;
-}
 .search_menu{
-    /* padding: ; */
     border: 2px solid #857456;
-    /* border-radius: 18px; */
 }
 #submit_button{
     width: 16px;
-    text-indent: -9999px;
     float: right;
     border: 0;
     background: transparent url(../src/images/icon_search.png) no-repeat 0 50%;
@@ -110,19 +109,13 @@ form{
 
 .content{
     width: 60%;
-    /* float: left; */
-    /* margin: 25px; */
-}
-
-.card{
-    /* margin: 15px; */
 }
 .user_info{
     display: flex;
     align-items: center;
 }
 .user_name{
-    color: black;
+    color: #000000;
     font-size: 12px;
     font-weight: bold;
     text-decoration: underline;
@@ -154,7 +147,6 @@ form{
     margin-top: 10px;
 }
 .publish_date{
-    /* float:right; */
     margin-right: auto;
     font-size: 10px;
     color: #383838;
@@ -171,9 +163,9 @@ form{
     height: 25px;
     width: 25px;
     border-radius: 50%;
-    border: green solid 3px;
-    background-color: lightgreen;
-    color: green;
+    border: #008000 solid 3px;
+    background-color: #90ee90;
+    color: #008000;
     font-weight: bold;
     font-size: 25px;
     text-align: center;
@@ -184,23 +176,17 @@ form{
     height: 25px;
     width: 25px;
     border-radius: 50%;
-    border: red solid 3px;
-    background-color: lightcoral;
-    color: red;
+    border: #ff0000 solid 3px;
+    background-color: #f08080;
+    color: #ff0000;
     font-weight: bold;
     font-size: 25px;
     text-align: center;
     margin-left: 10px;
     line-height: 20px;
 }
-.few_things{
-    display: flex;
-    /* justify-content: space-between; */
-}
 .right_bar{
     width: 40%;
-    /* margin-top: 25px;
-    margin-right: 25px; */
     margin-left: 50px;
 }
 .segment_nav{
@@ -216,7 +202,7 @@ form{
     width: 100%;
     font-size: 20px;
     text-transform: uppercase;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #000000;
 }
 .new_post{
     background-color: #f0f0f0;
@@ -228,7 +214,6 @@ form{
     color: inherit;
 }
 .tag_big{
-    /* background-color: aqua; */
     padding: 0 5%;
     line-height: 50px;
     left:0;
@@ -236,37 +221,32 @@ form{
     top:0;
     bottom:0;
     position: absolute;
-    color: white;
+    color: #ffffff;
     font-weight: bold;
 
 }
-ul{
+.list{
     padding: 0;
     margin: 0;
 }
-li{
+.item_list{
     display: block;
-    /* background-color: #fdb201; */
     text-align: right;
-    padding: 5px 20px;
-    border: white solid 2px;
+    border: #ffffff solid 2px;
     position: relative;
     height: 40px;
     opacity: 0.9;
 }
-.one{
-    background: transparent url(../src/images/котэ-животные-реактора-обнимашки-7272973.jpeg) no-repeat center/100%;
-}
-.two{
-    background: transparent url(../src/images/eldercactus-Комиксы-перевел-сам-7272966.jpeg) no-repeat top/100%;
-}
-.tree{
-    background: transparent url(../src/images/hr-it-юмор-geek-презентация-7225978.jpeg) no-repeat center/100%;
+
+.item_list .img_tag_background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
 }
 
 .footer{
     border-top: #6c6c6c solid 2px;
-    background-color: #fff;
+    background-color: #ffffff;
     overflow: hidden;
     font-weight: bold;
     color: #6c6c6c;
