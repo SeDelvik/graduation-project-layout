@@ -5,12 +5,16 @@ import logo_pic from './images/logo.png'
 import cat from './images/котэ-животные-реактора-обнимашки-7272973.jpeg'
 import com from './images/eldercactus-Комиксы-перевел-сам-7272966.jpeg'
 import hr from './images/hr-it-юмор-geek-презентация-7225978.jpeg'
+import {testFunk1} from './testFunk';
+import {testFunk2} from './testFunk';
+import {cardSet} from './cardSetGenerator'
 
 
 function App() {
   return (
     <div className="App">
-
+        {testFunk1()}
+        {testFunk2()}
         <header className='header'>
             <nav className="top_bar">
                 <a href='#' className='top_button link'>Что-то</a>
@@ -43,7 +47,7 @@ function App() {
                 <a href='#' className="button link">лучшее</a>
             </nav>
             <div className="background">
-                 <section className="content">
+                 <section className="content" id="content">
                     <div className='card'>
                         <div className='user_info'>
                             <img className='user_pic' src={user_pic}></img>
@@ -67,6 +71,7 @@ function App() {
                             </div>
                         </div>
                     </div>
+                    {cardSet()}
                 </section>
                 <nav className="right_bar">
                     <div className='segment_nav'>
