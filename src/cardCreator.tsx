@@ -37,12 +37,12 @@ export class card{
             .then((dataText) => {
                 //console.log(dataText);
                 text = dataText;
-                 return dataText;
                 //return null;
-            })
+            }).then(()=>{this.postText=text})
             .catch((err)=>{
                 return '';
             });
+            
         return text; 
     }
     private DataParser(data:any,tag:string):string{
@@ -77,6 +77,9 @@ export class card{
         }
         return text;
     }
+    // getPostText(){
+    //     return this.postText;
+    // }
 
     renderCard(){
         return(

@@ -1,20 +1,16 @@
-import React from 'react';
-import user_pic from './images/user_pic_test.jpg'
-import post_pic from './images/post_pic_test.jpeg'
+import React, { ReactElement } from 'react';
+import ReactDOM from 'react-dom';
 import logo_pic from './images/logo.png'
 import cat from './images/котэ-животные-реактора-обнимашки-7272973.jpeg'
 import com from './images/eldercactus-Комиксы-перевел-сам-7272966.jpeg'
 import hr from './images/hr-it-юмор-geek-презентация-7225978.jpeg'
-import {testFunk1} from './testFunk';
-import {testFunk2} from './testFunk';
-import {cardSet} from './cardSetGenerator'
+import Card from './CardMade'
 
+let array:ReactElement[] = [];
 
 function App() {
   return (
     <div className="App">
-        {testFunk1()}
-        {testFunk2()}
         <header className='header'>
             <nav className="top_bar">
                 <a href='#' className='top_button link'>Что-то</a>
@@ -48,30 +44,7 @@ function App() {
             </nav>
             <div className="background">
                  <section className="content" id="content">
-                    <div className='card'>
-                        <div className='user_info'>
-                            <img className='user_pic' src={user_pic}></img>
-                            <a href='#' className='user_name link'>Имя_пользователь</a>
-                        </div>
-                        <div>
-                            <div className='tag_block'>
-                                <a href='#' className='tag link'>Тег1</a>
-                                <a href='#' className='tag link'>Тег2</a>
-                                <a href='#' className='tag link'>Тег3</a>
-                            </div>
-                            <p className='post_text'>Тут наверно может быть какой то текст но он собственно не очень то обязателен</p>
-                            <img className='post_pic' src={post_pic}></img>
-                            <div className='post_info'>
-                                <span className='publish_date'>18.Mar.2022 00:38</span>
-                                <div className='rating_info'>
-                                    <span className='rating'>1.5</span>
-                                    <a href='#' className='plus link'>+</a>
-                                    <a href='#' className='minus link'>-</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {cardSet()}
+                 {array.map((post) => <>{post}</>)}
                 </section>
                 <nav className="right_bar">
                     <div className='segment_nav'>
@@ -107,3 +80,17 @@ function App() {
 }
 
 export default App;
+
+/**
+ * Создание нескольких рандомных постов и добавление в лист
+ */
+function AddPost(){
+    for(let i = 0;i<10;i=i+1){
+        array.push(<Card/>);
+    }
+    ReactDOM.render(<React.StrictMode>
+        <App />
+      </React.StrictMode>,
+      document.getElementById('root'))
+}
+{AddPost()}
